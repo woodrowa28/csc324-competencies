@@ -1,0 +1,9 @@
+baseURL = 'https://woodrowa28.github.io/csc324-competencies/'
+locale = 'en-us'
+title = 'CSC-324 Competencies Page'
+author = 'Aubrey Woodrow'
+theme = 'hugo-bearblog'
+cleanDestinationDir = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

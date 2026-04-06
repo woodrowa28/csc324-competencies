@@ -1,5 +1,0 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'CSC-324 Competencies Page'
-author = 'Aubrey Woodrow'
-theme = 'hugo-bearblog'
