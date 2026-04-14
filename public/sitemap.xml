@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/csc324-competencies/</loc>
   </url><url>
-    <loc>http://localhost:1313/development/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/development/</loc>
   </url><url>
-    <loc>http://localhost:1313/verification/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/verification/</loc>
   </url><url>
-    <loc>http://localhost:1313/design/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/design/</loc>
   </url><url>
-    <loc>http://localhost:1313/engineering/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/engineering/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/csc324-competencies/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/engineering/collaboration/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/design/evaluation/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/engineering/infrastructure/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/development/abstraction/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/development/architecture/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/design/needfinding/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/design/needfinding/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/engineering/process/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/design/prototyping/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/process/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/engineering/learning/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/design/prototyping/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/learning/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/verification/infrastructure/</loc>
+    <loc>http://localhost:1313/csc324-competencies/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/verification/strategies/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/verification/infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:1313/write-ups/</loc>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</loc>
   </url>
 </urlset>
