@@ -21,7 +21,7 @@ How did you design your prototype(s) and subsequent user studies to address thes
 
 What answers to your design questions did your efforts unveil?
 
-> Having a tutorial may create a story/gameplay mismatch, as give players background and then essentially make them do the same introductory idle process twice. Adding sound effects and dynamic UI could help keep people engaged. Another engagement boost is accomodating different playstyles (min/maxing, exploring, casual, etc). Finally, the production mechanics seemed to match well with the story and vibe we were trying to convey.
+> 
 
 ----------
 
