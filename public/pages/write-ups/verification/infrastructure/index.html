@@ -9,7 +9,8 @@
 <meta name="title" content="Testing Infrastructure" />
 <meta name="description" content="Testing Infrastructure
 How have you automated your tests so that they both take &ldquo;1-click&rdquo; to run and run automatically as part of build validation?
-Describe a specific occurrence in which your testing infrastructure saved you and/or your team work." />
+
+Because our software is a game, there is no good way to &ldquo;automatically&rdquo; run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations." />
 <meta name="keywords" content="" />
 
 
@@ -17,7 +18,7 @@ Describe a specific occurrence in which your testing infrastructure saved you an
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Testing Infrastructure">
   <meta property="og:description" content="Testing Infrastructure How have you automated your tests so that they both take “1-click” to run and run automatically as part of build validation?
-Describe a specific occurrence in which your testing infrastructure saved you and/or your team work.">
+Because our software is a game, there is no good way to “automatically” run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -28,15 +29,15 @@ Describe a specific occurrence in which your testing infrastructure saved you an
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Testing Infrastructure">
   <meta name="twitter:description" content="Testing Infrastructure How have you automated your tests so that they both take “1-click” to run and run automatically as part of build validation?
-Describe a specific occurrence in which your testing infrastructure saved you and/or your team work.">
+Because our software is a game, there is no good way to “automatically” run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations.">
 
 
 
 
   <meta itemprop="name" content="Testing Infrastructure">
   <meta itemprop="description" content="Testing Infrastructure How have you automated your tests so that they both take “1-click” to run and run automatically as part of build validation?
-Describe a specific occurrence in which your testing infrastructure saved you and/or your team work.">
-  <meta itemprop="wordCount" content="39">
+Because our software is a game, there is no good way to “automatically” run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations.">
+  <meta itemprop="wordCount" content="435">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -222,7 +223,16 @@ Describe a specific occurrence in which your testing infrastructure saved you an
 <content>
   <h1 id="testing-infrastructure">Testing Infrastructure</h1>
 <p>How have you automated your tests so that they both take &ldquo;1-click&rdquo; to run and run automatically as part of build validation?</p>
+<blockquote>
+<p>Because our software is a game, there is no good way to &ldquo;automatically&rdquo; run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations.</p>
+</blockquote>
 <p>Describe a specific occurrence in which your testing infrastructure saved you and/or your team work.</p>
+<blockquote>
+<p>At a high level, being able to select different &ldquo;tests&rdquo; from the interface (loading different save files) saved us time. This allowed us to investigate different situations without having to manually reach that point in the game. Many of these files involves states that would be very difficult to achieve through just playing the game, so it saves a lot of time to have an interface to load these without much thought. The structure also makes it very easy to add new tests: you only need to create a new txt file in the tests folder, and add a new button to the screen with the file name as a parameter.</p>
+</blockquote>
+<blockquote>
+<p>For a concrete example, the interface allowed me to catch the fact that the testing files were initially not hooked up correctly to the interface. Although the tracking of wood/paper on the testing interface was only added in <a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/commit/cf69d8937ce86575f8e572cf395742644c5b859d">commit cf69d89</a>, I had the code on my personal branch before that. Once I started to write per-tick functions, I noticed that a. the normal game execution was still playing out until the first test was selected, and b. the test files were not actually being loaded when their button was pressed. It would reset the timer but not load a test state. This prompted me to check our saving and loading code, revealing that the folder containing the test files was named <code>tests</code>, while the code was attempting to look into a folder named <code>test</code>. I then was more dilligent in checking the other saving/loading mechanics around the test system and made it so you couldn&rsquo;t manually save the game using <code>s</code> during the testing mode. Technically, the regular game does still run until you hit a test, but now the display resets immediately so you don&rsquo;t see the wood/paper progress from the background.</p>
+</blockquote>
 
 </content>
 

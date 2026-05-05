@@ -6,10 +6,14 @@ weight = 4
 
 ## Design Competencies
 
-### [Needfinding]({{< relref "write-ups/design/needfinding.md" >}})
+
+[Ideation]({{< relref "write-ups/design/ideation.md" >}})
 
 
-### [Prototyping]({{< relref "write-ups/design/prototyping.md" >}})
+[Needfinding]({{< relref "write-ups/design/needfinding.md" >}})
 
 
-### [Evaluation]({{< relref "write-ups/design/evaluation.md" >}})
+[Prototyping]({{< relref "write-ups/design/prototyping.md" >}})
+
+
+[Evaluation]({{< relref "write-ups/design/evaluation.md" >}})

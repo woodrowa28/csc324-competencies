@@ -12,7 +12,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/development/</guid>
-      <description>&lt;h1 id=&#34;development-competencies&#34;&gt;Development Competencies&lt;/h1&gt;&#xA;&lt;h3 id=&#34;medium-scale-abstraction&#34;&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/&#34;&gt;Medium-Scale Abstraction&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;medium-scale-architecture&#34;&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/&#34;&gt;Medium-Scale Architecture&lt;/a&gt;&lt;/h3&gt;</description>
+      <description>&lt;h2 id=&#34;development-competencies&#34;&gt;Development Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/&#34;&gt;Medium-Scale Abstraction&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/&#34;&gt;Medium-Scale Architecture&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Verification</title>
@@ -26,7 +26,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/design/</guid>
-      <description>&lt;h2 id=&#34;design-competencies&#34;&gt;Design Competencies&lt;/h2&gt;&#xA;&lt;h3 id=&#34;needfinding&#34;&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/needfinding/&#34;&gt;Needfinding&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;prototyping&#34;&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/prototyping/&#34;&gt;Prototyping&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;evaluation&#34;&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/&#34;&gt;Evaluation&lt;/a&gt;&lt;/h3&gt;</description>
+      <description>&lt;h2 id=&#34;design-competencies&#34;&gt;Design Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/ideation/&#34;&gt;Ideation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/needfinding/&#34;&gt;Needfinding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/prototyping/&#34;&gt;Prototyping&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/&#34;&gt;Evaluation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Engineering</title>
@@ -40,14 +40,21 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/</guid>
-      <description>&lt;h1 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h1&gt;&#xA;&lt;h3 id=&#34;instance-1&#34;&gt;Instance 1&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;instance-2&#34;&gt;Instance 2&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instance-3&#34;&gt;Instance 3&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;collaboration-difficulties&#34;&gt;Collaboration Difficulties?&lt;/h3&gt;</description>
+      <description>&lt;h1 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h1&gt;&#xA;&lt;h3 id=&#34;instance-1-bug--pr-90&#34;&gt;Instance 1 (Bug) &amp;ndash; PR 90&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;instance-2-submit-pr--pr-54&#34;&gt;Instance 2 (Submit PR) &amp;ndash; PR 54&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instance-3-code-review--pr-94&#34;&gt;Instance 3 (Code Review) &amp;ndash; PR 94&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instance-4--misc-pr-112&#34;&gt;Instance 4 &amp;ndash; (Misc) PR 112&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;collaboration-difficulties&#34;&gt;Collaboration Difficulties?&lt;/h3&gt;</description>
     </item>
     <item>
       <title>Evaluation</title>
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/</guid>
-      <description>&lt;h1 id=&#34;evaluation&#34;&gt;Evaluation&lt;/h1&gt;&#xA;&lt;p&gt;What was the design of your user study to evaluate your artifact?&lt;/p&gt;&#xA;&lt;p&gt;What were the results of this user study?&lt;/p&gt;&#xA;&lt;p&gt;What were the main points of future development that you took away from this activity?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;evaluation&#34;&gt;Evaluation&lt;/h1&gt;&#xA;&lt;p&gt;What was the design of your user study to evaluate your artifact?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I conducted the evaluation of our initial paper prototype. We designed the prototype itself and the experimental script primarily to see how intuitive our proposed layout was.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What were the results of this user study?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Having a tutorial may create a story/gameplay mismatch, as give players background and then essentially make them do the same introductory idle process twice. Adding sound effects and dynamic UI could help keep people engaged. Another engagement boost is accomodating different playstyles (min/maxing, exploring, casual, etc). Finally, the production mechanics seemed to match well with the story and vibe we were trying to convey.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ideation</title>
+      <link>http://localhost:1313/csc324-competencies/pages/write-ups/design/ideation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/csc324-competencies/pages/write-ups/design/ideation/</guid>
+      <description>&lt;h1 id=&#34;ideation&#34;&gt;Ideation&lt;/h1&gt;&#xA;&lt;p&gt;What techniques did you use to discover solutions to users&amp;rsquo; needs?&lt;/p&gt;&#xA;&lt;p&gt;What solution(s) did you ultimately pursue and why did you choose them?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Infrastructure</title>
@@ -103,14 +110,14 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/verification/infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/verification/infrastructure/</guid>
-      <description>&lt;h1 id=&#34;testing-infrastructure&#34;&gt;Testing Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;How have you automated your tests so that they both take &amp;ldquo;1-click&amp;rdquo; to run and run automatically as part of build validation?&lt;/p&gt;&#xA;&lt;p&gt;Describe a specific occurrence in which your testing infrastructure saved you and/or your team work.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;testing-infrastructure&#34;&gt;Testing Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;How have you automated your tests so that they both take &amp;ldquo;1-click&amp;rdquo; to run and run automatically as part of build validation?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Because our software is a game, there is no good way to &amp;ldquo;automatically&amp;rdquo; run tests upon commit or build validation. Instead, we opted for a framework that could be toggled on and off during the execution of the game. Once in the framework, you can select a specific test in the form of a starting save file for game execution. From there, we have built-in asserts that run every frame of the game, allowing us to ensure that game updates happen as they should for a wide variety of playstyles and situations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing Strategies</title>
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</guid>
-      <description>&lt;h1 id=&#34;testing-strategies&#34;&gt;Testing Strategies&lt;/h1&gt;&#xA;&lt;p&gt;According to code coverage tools, what aspects of this component are covered with tests?&lt;/p&gt;&#xA;&lt;p&gt;What kinds of tests are they?&lt;/p&gt;&#xA;&lt;p&gt;For code that is not covered by tests, why did you not cover them?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;testing-strategies&#34;&gt;Testing Strategies&lt;/h1&gt;&#xA;&lt;p&gt;According to code coverage tools, what aspects of this component are covered with tests?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Love2d/Lua does not support code checker functionality due to the lack of formal testing. I estimate that about 80% of&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What kinds of tests are they?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;For code that is not covered by tests, why did you not cover them?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
