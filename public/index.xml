@@ -117,7 +117,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</guid>
-      <description>&lt;h1 id=&#34;testing-strategies&#34;&gt;Testing Strategies&lt;/h1&gt;&#xA;&lt;p&gt;According to code coverage tools, what aspects of this component are covered with tests?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Love2d/Lua does not support code checker functionality due to the lack of formal testing. I estimate that about 80% of&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What kinds of tests are they?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;For code that is not covered by tests, why did you not cover them?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;testing-strategies&#34;&gt;Testing Strategies&lt;/h1&gt;&#xA;&lt;p&gt;According to code coverage tools, what aspects of this component are covered with tests?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Love2d/Lua does not support code checker functionality due to the lack of formal testing. I estimate that about 40% of our codebase is covered by these tests. Our formal tests are only able to cover the per-tick update functionality, accessing various objects, and exercises the testing screen drawing code. Princess has also worked on a step-by-step guide for testing the UI to the best of our ability; it details correct behavior for the drawing states of our program, allowing us to cover that section of code too.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
