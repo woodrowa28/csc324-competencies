@@ -10,7 +10,11 @@
   </url><url>
     <loc>http://localhost:1313/csc324-competencies/pages/design/</loc>
   </url><url>
+    <loc>http://localhost:1313/csc324-competencies/pages/advanced/</loc>
+  </url><url>
     <loc>http://localhost:1313/csc324-competencies/pages/engineering/</loc>
+  </url><url>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/</loc>
   </url><url>
     <loc>http://localhost:1313/csc324-competencies/categories/</loc>
   </url><url>
@@ -34,6 +38,8 @@
   </url><url>
     <loc>http://localhost:1313/csc324-competencies/pages/write-ups/design/prototyping/</loc>
   </url><url>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/</loc>
+  </url><url>
     <loc>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/learning/</loc>
   </url><url>
     <loc>http://localhost:1313/csc324-competencies/tags/</loc>
@@ -41,5 +47,7 @@
     <loc>http://localhost:1313/csc324-competencies/pages/write-ups/verification/infrastructure/</loc>
   </url><url>
     <loc>http://localhost:1313/csc324-competencies/pages/write-ups/verification/strategies/</loc>
+  </url><url>
+    <loc>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/testing_tech/</loc>
   </url>
 </urlset>
