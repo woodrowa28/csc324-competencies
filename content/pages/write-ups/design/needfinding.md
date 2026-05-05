@@ -17,6 +17,6 @@ What did you learn about users' needs from this process?
 
 ## Evidence
 
-[Interview](https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/commit/5bcc298dd621cfd3cef0f1a0610aaa581f3d2042)
+[Interview](https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/blob/main/BBInterview)
 
-[Observation](https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/commit/70507489580611ba919ab86d862dde93b1f9effd)
+[Observation](https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/blob/main/BWObservation)
