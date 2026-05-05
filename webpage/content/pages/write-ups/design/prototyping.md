@@ -1,5 +1,0 @@
-+++
-title = 'Prototyping'
-+++
-
-### Prototyping
