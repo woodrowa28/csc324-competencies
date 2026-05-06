@@ -9,8 +9,8 @@
 <meta name="title" content="Medium-Scale Architecture" />
 <meta name="description" content="Medium-Scale Architecture
 What architectural pattern does your program employ?
-What components result from this pattern in your program?
-What technologies and/or libraries make-up each of the components?" />
+
+Our program includes multiple &ldquo;handler&rdquo; files that define specific event behavior. In order to keep main.lua easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (perSecHandler.lua), worked with Ian on testing (testingHandler.lua), helped with the dialogue and drawing (dialogueHandler.lua and drawingHandler.lua respectively), and did not contribute much to the game saving/loading handler (gameStateHandler.lua)." />
 <meta name="keywords" content="" />
 
 
@@ -18,8 +18,7 @@ What technologies and/or libraries make-up each of the components?" />
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Medium-Scale Architecture">
   <meta property="og:description" content="Medium-Scale Architecture What architectural pattern does your program employ?
-What components result from this pattern in your program?
-What technologies and/or libraries make-up each of the components?">
+Our program includes multiple “handler” files that define specific event behavior. In order to keep main.lua easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (perSecHandler.lua), worked with Ian on testing (testingHandler.lua), helped with the dialogue and drawing (dialogueHandler.lua and drawingHandler.lua respectively), and did not contribute much to the game saving/loading handler (gameStateHandler.lua).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -30,17 +29,15 @@ What technologies and/or libraries make-up each of the components?">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Medium-Scale Architecture">
   <meta name="twitter:description" content="Medium-Scale Architecture What architectural pattern does your program employ?
-What components result from this pattern in your program?
-What technologies and/or libraries make-up each of the components?">
+Our program includes multiple “handler” files that define specific event behavior. In order to keep main.lua easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (perSecHandler.lua), worked with Ian on testing (testingHandler.lua), helped with the dialogue and drawing (dialogueHandler.lua and drawingHandler.lua respectively), and did not contribute much to the game saving/loading handler (gameStateHandler.lua).">
 
 
 
 
   <meta itemprop="name" content="Medium-Scale Architecture">
   <meta itemprop="description" content="Medium-Scale Architecture What architectural pattern does your program employ?
-What components result from this pattern in your program?
-What technologies and/or libraries make-up each of the components?">
-  <meta itemprop="wordCount" content="27">
+Our program includes multiple “handler” files that define specific event behavior. In order to keep main.lua easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (perSecHandler.lua), worked with Ian on testing (testingHandler.lua), helped with the dialogue and drawing (dialogueHandler.lua and drawingHandler.lua respectively), and did not contribute much to the game saving/loading handler (gameStateHandler.lua).">
+  <meta itemprop="wordCount" content="216">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -209,7 +206,7 @@ What technologies and/or libraries make-up each of the components?">
   <h2>CSC-324 Competencies Page</h2>
 </a>
 <nav>
-<a href="/csc324-competencies/">Home  || </a>
+<a href="/csc324-competencies/">Home || </a>
 
 <a href="/csc324-competencies/pages/development/">Development</a>
 
@@ -217,9 +214,9 @@ What technologies and/or libraries make-up each of the components?">
 
 <a href="/csc324-competencies/pages/design/">Design</a>
 
-<a href="/csc324-competencies/pages/advanced/">Advanced</a>
-
 <a href="/csc324-competencies/pages/engineering/">Engineering</a>
+
+<a href="/csc324-competencies/pages/advanced/">Advanced</a>
 
 </nav>
 </header>
@@ -228,8 +225,23 @@ What technologies and/or libraries make-up each of the components?">
 <content>
   <h1 id="medium-scale-architecture">Medium-Scale Architecture</h1>
 <p>What architectural pattern does your program employ?</p>
+<blockquote>
+<p>Our program includes multiple &ldquo;handler&rdquo; files that define specific event behavior. In order to keep <code>main.lua</code> easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (<code>perSecHandler.lua</code>), worked with Ian on testing (<code>testingHandler.lua</code>), helped with the dialogue and drawing (<code>dialogueHandler.lua</code> and <code>drawingHandler.lua</code> respectively), and did not contribute much to the game saving/loading handler (<code>gameStateHandler.lua</code>).</p>
+</blockquote>
+<blockquote>
+<p>The most independent of these handlers is the testing one, as it controls an entirely separate interface used only for our testing suite. It deviates from the general architecture of our program the most; updates and printing to the screen still happen, but the updates are behind the scenes and include <code>assert</code> tests, the testing interface is drawn, and the user cannot impact the test gameplay (only select different tests or exit the interface).</p>
+</blockquote>
 <p>What components result from this pattern in your program?</p>
+<blockquote>
+<p>This pattern handles both the &ldquo;update&rdquo; and &ldquo;draw&rdquo; sections of Love2D&rsquo;s core loop, with different handlers specializing in different areas.</p>
+</blockquote>
 <p>What technologies and/or libraries make-up each of the components?</p>
+<blockquote>
+<p>No other technologies are utilized in these components, as our codebase is solely in Lua and relies very minimally on outside repositories.</p>
+</blockquote>
+<hr>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/tree/main/handlers">Handlers folder</a></p>
 
 </content>
 

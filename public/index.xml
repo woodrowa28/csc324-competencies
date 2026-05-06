@@ -82,14 +82,14 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/</guid>
-      <description>&lt;h1 id=&#34;medium-scale-abstraction&#34;&gt;Medium-Scale Abstraction&lt;/h1&gt;&#xA;&lt;p&gt;What functionality does your code sample abstract away?&lt;/p&gt;&#xA;&lt;p&gt;How does it mechanically achieve abstraction?&lt;/p&gt;&#xA;&lt;p&gt;What purpose does this abstraction serve in your larger program?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medium-scale-abstraction&#34;&gt;Medium-Scale Abstraction&lt;/h1&gt;&#xA;&lt;p&gt;What functionality does your code sample abstract away?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in &lt;code&gt;love.update&lt;/code&gt; and &lt;code&gt;love.draw&lt;/code&gt;, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;How does it mechanically achieve abstraction?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Medium-Scale Architecture</title>
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/</guid>
-      <description>&lt;h1 id=&#34;medium-scale-architecture&#34;&gt;Medium-Scale Architecture&lt;/h1&gt;&#xA;&lt;p&gt;What architectural pattern does your program employ?&lt;/p&gt;&#xA;&lt;p&gt;What components result from this pattern in your program?&lt;/p&gt;&#xA;&lt;p&gt;What technologies and/or libraries make-up each of the components?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medium-scale-architecture&#34;&gt;Medium-Scale Architecture&lt;/h1&gt;&#xA;&lt;p&gt;What architectural pattern does your program employ?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our program includes multiple &amp;ldquo;handler&amp;rdquo; files that define specific event behavior. In order to keep &lt;code&gt;main.lua&lt;/code&gt; easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (&lt;code&gt;perSecHandler.lua&lt;/code&gt;), worked with Ian on testing (&lt;code&gt;testingHandler.lua&lt;/code&gt;), helped with the dialogue and drawing (&lt;code&gt;dialogueHandler.lua&lt;/code&gt; and &lt;code&gt;drawingHandler.lua&lt;/code&gt; respectively), and did not contribute much to the game saving/loading handler (&lt;code&gt;gameStateHandler.lua&lt;/code&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Needfinding</title>

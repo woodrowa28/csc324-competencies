@@ -9,8 +9,10 @@
 <meta name="title" content="Medium-Scale Abstraction" />
 <meta name="description" content="Medium-Scale Abstraction
 What functionality does your code sample abstract away?
-How does it mechanically achieve abstraction?
-What purpose does this abstraction serve in your larger program?" />
+
+The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in love.update and love.draw, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.
+
+How does it mechanically achieve abstraction?" />
 <meta name="keywords" content="" />
 
 
@@ -18,8 +20,8 @@ What purpose does this abstraction serve in your larger program?" />
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Medium-Scale Abstraction">
   <meta property="og:description" content="Medium-Scale Abstraction What functionality does your code sample abstract away?
-How does it mechanically achieve abstraction?
-What purpose does this abstraction serve in your larger program?">
+The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in love.update and love.draw, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.
+How does it mechanically achieve abstraction?">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -30,17 +32,17 @@ What purpose does this abstraction serve in your larger program?">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Medium-Scale Abstraction">
   <meta name="twitter:description" content="Medium-Scale Abstraction What functionality does your code sample abstract away?
-How does it mechanically achieve abstraction?
-What purpose does this abstraction serve in your larger program?">
+The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in love.update and love.draw, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.
+How does it mechanically achieve abstraction?">
 
 
 
 
   <meta itemprop="name" content="Medium-Scale Abstraction">
   <meta itemprop="description" content="Medium-Scale Abstraction What functionality does your code sample abstract away?
-How does it mechanically achieve abstraction?
-What purpose does this abstraction serve in your larger program?">
-  <meta itemprop="wordCount" content="26">
+The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in love.update and love.draw, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.
+How does it mechanically achieve abstraction?">
+  <meta itemprop="wordCount" content="409">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -209,7 +211,7 @@ What purpose does this abstraction serve in your larger program?">
   <h2>CSC-324 Competencies Page</h2>
 </a>
 <nav>
-<a href="/csc324-competencies/">Home  || </a>
+<a href="/csc324-competencies/">Home || </a>
 
 <a href="/csc324-competencies/pages/development/">Development</a>
 
@@ -217,9 +219,9 @@ What purpose does this abstraction serve in your larger program?">
 
 <a href="/csc324-competencies/pages/design/">Design</a>
 
-<a href="/csc324-competencies/pages/advanced/">Advanced</a>
-
 <a href="/csc324-competencies/pages/engineering/">Engineering</a>
+
+<a href="/csc324-competencies/pages/advanced/">Advanced</a>
 
 </nav>
 </header>
@@ -228,8 +230,34 @@ What purpose does this abstraction serve in your larger program?">
 <content>
   <h1 id="medium-scale-abstraction">Medium-Scale Abstraction</h1>
 <p>What functionality does your code sample abstract away?</p>
+<blockquote>
+<p>The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in <code>love.update</code> and <code>love.draw</code>, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.</p>
+</blockquote>
 <p>How does it mechanically achieve abstraction?</p>
+<blockquote>
+<p>We have two main &ldquo;abstract classes&rdquo; (objects that are inherited from and define shared behavior but are never instantiated&mdash;no technical restrictions but they are the closest match in this invented OO programming framework): <code>Buyable</code> and <code>UIElement</code>. <code>Buyable</code> holds all the types of upgrades and items that can be purchased throughout the game, so it provides the skeleton of a <code>buy</code> method. This ensures that we can define a parameter of a button as a <code>Buyable</code> and have it be able to be &ldquo;bought&rdquo; no matter the underlying purchasable. <code>UIElement</code> is the superclass of everything that gets printed to the screen, so it contains fields around position, visibility, and interaction. For example, then, we can loop through our list of UI elements and call the <code>draw</code> method defined in <code>UIElement</code> regardless of the different drawing implementations for different parts.</p>
+</blockquote>
 <p>What purpose does this abstraction serve in your larger program?</p>
+<blockquote>
+<p>The class structure follows a typical inheritance-based, object-oriented class hierarchy. This allows us to reduce repetition and tedious code in multiple ways: we don&rsquo;t need to deal with complicated drawing and position functions while displaying UI elements, and we can have the same general code to apply to many similar components of the program. We use the class hierarchy to create practically every part of the UI design, manage clickable interactions, and hold the information about the items linked to each button.</p>
+</blockquote>
+<p>This example code demonstrates how our &ldquo;abstract classes&rdquo; allow for easy drawing to the screen: the exact drawing specifications are declared in the button and classes, meaning we can simply loop through a list to print everything to the screen:</p>
+<pre tabindex="0"><code>    -- Background
+    love.graphics.setColor(1, 1, 1)
+    love.graphics.draw(UI.background, 0, 0)
+    BackgroundButtons.help:draw()
+
+    -- Clickable UI Buttons
+    for _, weapon in pairs(WeaponButtons) do
+        weapon:draw()
+    end
+    for _, other in pairs(OtherItemButtons) do
+        other:draw()
+    end
+</code></pre><hr>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/tree/main/classes">Classes folder</a></p>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/blob/main/Classes%20Diagram.pdf">Class Diagram</a> &ndash; this is <em>very</em> outdated, so the structure no longer looks like this, but most of the existing fields/methods are still present, and it shows a starting point of the hierarchy.</p>
 
 </content>
 
