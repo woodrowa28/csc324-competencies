@@ -9,7 +9,8 @@
 <meta name="title" content="Infrastructure" />
 <meta name="description" content="Infrastructure
 What development tools did you use through process to help write code and automate the build/deployment process?
-What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?" />
+
+Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions &ldquo;Lua&rdquo; by sumneko, which provides intellisense features, type checking, and a method of documentation, &ldquo;Love2D Support&rdquo; by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates&rsquo; code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it." />
 <meta name="keywords" content="" />
 
 
@@ -17,7 +18,7 @@ What is one specific problem (e.g., debugging and issue) that you encountered wh
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Infrastructure">
   <meta property="og:description" content="Infrastructure What development tools did you use through process to help write code and automate the build/deployment process?
-What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?">
+Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions “Lua” by sumneko, which provides intellisense features, type checking, and a method of documentation, “Love2D Support” by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates’ code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -28,15 +29,15 @@ What is one specific problem (e.g., debugging and issue) that you encountered wh
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Infrastructure">
   <meta name="twitter:description" content="Infrastructure What development tools did you use through process to help write code and automate the build/deployment process?
-What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?">
+Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions “Lua” by sumneko, which provides intellisense features, type checking, and a method of documentation, “Love2D Support” by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates’ code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it.">
 
 
 
 
   <meta itemprop="name" content="Infrastructure">
   <meta itemprop="description" content="Infrastructure What development tools did you use through process to help write code and automate the build/deployment process?
-What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?">
-  <meta itemprop="wordCount" content="47">
+Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions “Lua” by sumneko, which provides intellisense features, type checking, and a method of documentation, “Love2D Support” by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates’ code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it.">
+  <meta itemprop="wordCount" content="461">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -224,7 +225,19 @@ What is one specific problem (e.g., debugging and issue) that you encountered wh
 <content>
   <h1 id="infrastructure">Infrastructure</h1>
 <p>What development tools did you use through process to help write code and automate the build/deployment process?</p>
+<blockquote>
+<p>Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions &ldquo;Lua&rdquo; by sumneko, which provides intellisense features, type checking, and a method of documentation, &ldquo;Love2D Support&rdquo; by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates&rsquo; code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it.</p>
+</blockquote>
 <p>What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?</p>
+<blockquote>
+<p>After we pushed the dialogue functionality to main, whenever a text box was triggered to appear on screen, it would show up blank and seemingly not let the player click through to advance and dismiss it. Maya, Ian, and I looked at this during one of our weekly group meetings and spent over an hour trying to figure out what was going wrong. Because we lacked structured tools, we utilized our VSCode extensions to the best of our ability and eventually figured it out through a combination of that and old-fashioned print statements.</p>
+</blockquote>
+<blockquote>
+<p>We knew fairly quickly that the problem was occurring somewhere in <code>DialogueHandler</code>, so we began scanning the methods in there for anything unusual. The Lua extension came in handy because it gave us the ability for stronger type checking in a dynamically typed language. We were able to ensure that the error wasn&rsquo;t due to mishandling file loading or attempting to access nonexistent variables. We also managed to catch some small optimizations with the class declarations along the way. Love2D gives the option to have a standard text console, which was quite useful in the print debugging section of our work. However, our tools were not as helpful as we were hoping they would be; I finally found the issue by narrowing down execution states with printing to the console and drawing out the full function stack. The keys we were supposed to be using to mark off seen text were just getting dropped on the ground, so the program kept re-initializing the textbox every frame, hence it looking like nothing was printing.</p>
+</blockquote>
+<hr>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/commit/12d9d577c6685282761a35ac5e5afa58a067cce6">Bug Fix Commit</a> &ndash; Ian is marked as the author, as he is the one who actually made the changes, but this was a collaborative debugging effort.</p>
 
 </content>
 

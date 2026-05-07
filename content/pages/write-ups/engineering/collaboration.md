@@ -24,7 +24,7 @@ title = 'Collaboration'
 
 > Communication: Maya requested my review after implementing the basic prestige system. The code seemed solid from the lens of correctness, but there were some "code smells" that I wanted to  clean up in order to keep our codebase as simple and neat as possible. I also noticed that the drawing code for the prestige was mostly located in main instead of abstracted away into classes like the rest of the buttons. This seemed inefficient and dissimilar to the rest of our code, so I suggested creating a new button class to hold the prestige info. Maya and I had multiple back-and-forth interactions, and thus engaged in significant collaboration for this PR.
 
-### Instance 4 -- (Misc) [PR 112](https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/pull/112)
+### Instance 4 (Misc) -- [PR 112](https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/pull/112)
 
 > Work done: I reviewed Maya's PR for truncating the numbers and displaying them nicely to the screen. I noticed that one set of variables was named similarly to another property of the code. We mostly keep track of `dps` in our program, which is calculated directly from the weapon damage and meeple/prestige multipliers. `wps`, on the other hand, only exists as output for the user to see how their wood is changing per second (`dps`, then subtracting the amount taken away to make paper). We had something labeled as `dps` when it made more sense to be `wps`, so I suggested that change.
 
