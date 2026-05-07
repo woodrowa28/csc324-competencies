@@ -29,18 +29,18 @@
       <description>&lt;h2 id=&#34;design-competencies&#34;&gt;Design Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/needfinding/&#34;&gt;Needfinding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/ideation/&#34;&gt;Ideation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/prototyping/&#34;&gt;Prototyping&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/design/evaluation/&#34;&gt;Evaluation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Advanced</title>
-      <link>http://localhost:1313/csc324-competencies/pages/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/csc324-competencies/pages/advanced/</guid>
-      <description>&lt;h2 id=&#34;design-competencies&#34;&gt;Design Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/&#34;&gt;Development&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/testing_tech/&#34;&gt;Verification&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/&#34;&gt;Engineering&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Engineering</title>
       <link>http://localhost:1313/csc324-competencies/pages/engineering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/engineering/</guid>
       <description>&lt;h2 id=&#34;engineering-competencies&#34;&gt;Engineering Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/engineering/infrastructure/&#34;&gt;Infrastructure&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/engineering/learning/&#34;&gt;Self-Learning&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/engineering/process/&#34;&gt;Process&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/&#34;&gt;Collaboration&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/csc324-competencies/pages/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/csc324-competencies/pages/advanced/</guid>
+      <description>&lt;h2 id=&#34;design-competencies&#34;&gt;Design Competencies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/&#34;&gt;Development&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/testing_tech/&#34;&gt;Verification&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/&#34;&gt;Engineering&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Architecture</title>
@@ -54,7 +54,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/collaboration/</guid>
-      <description>&lt;h1 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h1&gt;&#xA;&lt;h3 id=&#34;instance-1-bug--pr-90&#34;&gt;Instance 1 (Bug) &amp;ndash; PR 90&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;instance-2-submit-pr--pr-54&#34;&gt;Instance 2 (Submit PR) &amp;ndash; PR 54&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instance-3-code-review--pr-94&#34;&gt;Instance 3 (Code Review) &amp;ndash; PR 94&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instance-4--misc-pr-112&#34;&gt;Instance 4 &amp;ndash; (Misc) PR 112&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Work done:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subject:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;collaboration-difficulties&#34;&gt;Collaboration Difficulties?&lt;/h3&gt;</description>
+      <description>&lt;h1 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h1&gt;&#xA;&lt;h3 id=&#34;instance-1-bug--pr-90&#34;&gt;Instance 1 (Bug) &amp;ndash; &lt;a href=&#34;https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/pull/90/changes&#34;&gt;PR 90&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;(See PR description for commit clarity)&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Work done: I moved the price calculation into its own function within the buyable objects. Whenever the item is purchased, the &lt;code&gt;buy&lt;/code&gt; method then calls the &lt;code&gt;updatePrice&lt;/code&gt; function. This refactoring allowed me to then call the pricing functions after the save file was loaded. Previously, the price was initialized when the empty objects were created at the very beginning of the program, but then after the save file was read and the proper item amount loaded, the price calculations was never done with the new amount until another of the item was purchased.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Evaluation</title>
@@ -82,14 +82,14 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/</guid>
-      <description>&lt;h1 id=&#34;medium-scale-abstraction&#34;&gt;Medium-Scale Abstraction&lt;/h1&gt;&#xA;&lt;p&gt;What functionality does your code sample abstract away?&lt;/p&gt;&#xA;&lt;p&gt;How does it mechanically achieve abstraction?&lt;/p&gt;&#xA;&lt;p&gt;What purpose does this abstraction serve in your larger program?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medium-scale-abstraction&#34;&gt;Medium-Scale Abstraction&lt;/h1&gt;&#xA;&lt;p&gt;What functionality does your code sample abstract away?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The class hierarchy aids in the process of abstracting away the actions that need to be performed constantly. These actions go in &lt;code&gt;love.update&lt;/code&gt; and &lt;code&gt;love.draw&lt;/code&gt;, both of which are repeated every tick of the game. Generally, the classes abstract away the code that would otherwise need to be repeated for drawing buttons, handling clicks, calculating DPS/PPS, and more.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;How does it mechanically achieve abstraction?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Medium-Scale Architecture</title>
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/development/architecture/</guid>
-      <description>&lt;h1 id=&#34;medium-scale-architecture&#34;&gt;Medium-Scale Architecture&lt;/h1&gt;&#xA;&lt;p&gt;What architectural pattern does your program employ?&lt;/p&gt;&#xA;&lt;p&gt;What components result from this pattern in your program?&lt;/p&gt;&#xA;&lt;p&gt;What technologies and/or libraries make-up each of the components?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;medium-scale-architecture&#34;&gt;Medium-Scale Architecture&lt;/h1&gt;&#xA;&lt;p&gt;What architectural pattern does your program employ?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our program includes multiple &amp;ldquo;handler&amp;rdquo; files that define specific event behavior. In order to keep &lt;code&gt;main.lua&lt;/code&gt; easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (&lt;code&gt;perSecHandler.lua&lt;/code&gt;), worked with Ian on testing (&lt;code&gt;testingHandler.lua&lt;/code&gt;), helped with the dialogue and drawing (&lt;code&gt;dialogueHandler.lua&lt;/code&gt; and &lt;code&gt;drawingHandler.lua&lt;/code&gt; respectively), and did not contribute much to the game saving/loading handler (&lt;code&gt;gameStateHandler.lua&lt;/code&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Needfinding</title>
