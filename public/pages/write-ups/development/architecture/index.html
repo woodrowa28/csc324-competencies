@@ -37,7 +37,7 @@ Our program includes multiple “handler” files that define specific event beh
   <meta itemprop="name" content="Medium-Scale Architecture">
   <meta itemprop="description" content="Medium-Scale Architecture What architectural pattern does your program employ?
 Our program includes multiple “handler” files that define specific event behavior. In order to keep main.lua easy to read, all of the major activities and event results are hosted in separate files, each with their own specialization. I created the tick/second updates (perSecHandler.lua), worked with Ian on testing (testingHandler.lua), helped with the dialogue and drawing (dialogueHandler.lua and drawingHandler.lua respectively), and did not contribute much to the game saving/loading handler (gameStateHandler.lua).">
-  <meta itemprop="wordCount" content="216">
+  <meta itemprop="wordCount" content="254">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -237,7 +237,7 @@ Our program includes multiple “handler” files that define specific event beh
 </blockquote>
 <p>What technologies and/or libraries make-up each of the components?</p>
 <blockquote>
-<p>No other technologies are utilized in these components, as our codebase is solely in Lua and relies very minimally on outside repositories.</p>
+<p>All of the code that my group made is written in Lua. We recently added an external library, written in Lua and Python, to help with adding sound to the game. This library is primarily utilized in the drawing section (for printing the music slider and sfx checkbox) and the user interaction checks (for handling the toggling of these features).</p>
 </blockquote>
 <hr>
 <h2 id="evidence">Evidence</h2>

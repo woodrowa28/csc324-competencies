@@ -17,7 +17,7 @@ What components result from this pattern in your program?
 
 What technologies and/or libraries make-up each of the components?
 
-> No other technologies are utilized in these components, as our codebase is solely in Lua and relies very minimally on outside repositories.
+> All of the code that my group made is written in Lua. We recently added an external library, written in Lua and Python, to help with adding sound to the game. This library is primarily utilized in the drawing section (for printing the music slider and sfx checkbox) and the user interaction checks (for handling the toggling of these features).
 
 ------------
 

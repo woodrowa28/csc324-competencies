@@ -9,13 +9,13 @@ What techniques did you use to discover solutions to users' needs?
 
 > We used a variety of brainstorming techniques, including...
 
-> Creating personas: we developed three personas based on three types of people we could imagine playing our game. These ended up fitting into fairly standard gaming archetypes: the laid-back player that takes a while to learn, the min-max gamer, and the one that cares more about story/visuals than perfect gameplay. We figured these three would give us a fairly comprehensive collection of traits to keep in mind as we developed.
+> **Creating personas**: we developed three personas based on three types of people we could imagine playing our game. These ended up fitting into fairly standard gaming archetypes: the laid-back player that takes a while to learn, the min-max gamer, and the one that cares more about story/visuals than perfect gameplay. We figured these three would give us a fairly comprehensive collection of traits to keep in mind as we developed.
 
-> World's worst idea: when considering how to structure our game and how to make it fun, we started by coming up with a list of things that would make the game frustrating or otherwise bad to play. Thinking about how we would be overwhelmed by a busy interface with no feedback, for example, led us to consider when the pacing of the game.
+> **World's worst idea**: when considering how to structure our game and how to make it fun, we started by coming up with a list of things that would make the game frustrating or otherwise bad to play. Thinking about how we would be overwhelmed by a busy interface with no feedback, for example, led us to consider when the pacing of the game.
 
-> Rapid ideation: to decide on a topic and then come up with a name, we tried to spitball as many ideas as possible to get a sense of general possibilities and trends. From there, we were able to narrow down to ones we liked without getting caught up in small details.
+> **Rapid ideation**: to decide on a topic and then come up with a name, we tried to spitball as many ideas as possible to get a sense of general possibilities and trends. From there, we were able to narrow down to ones we liked without getting caught up in small details.
 
-> Mind mapping: most of our brainstorming was unstructured whiteboard notes allowing us to spit out ideas and visually connect them together. We used this to design the UI, plot story, develop the resource system, and more.
+> **Mind mapping**: most of our brainstorming was unstructured whiteboard notes allowing us to spit out ideas and visually connect them together. We used this to design the UI, plot story, develop the resource system, and more.
 
 What solution(s) did you ultimately pursue and why did you choose them?
 
