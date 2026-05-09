@@ -37,3 +37,12 @@ end
 For code that is not covered by tests, why did you not cover them?
 
 > The project's nature meant that it was not possible to create a comprehensive testing suite, as game execution relies on abstracted-away functions and loops from Love2D. Our game does not come with fancy physics calculations or complicated data storage, so there isn't much to poke at behind the scenes. Instead, we did what we could for ensuring the main part of execution, the repeated game loop, was as sturdy as possible.
+
+
+------------
+
+## Evidence
+
+[Testing Handler Class](https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/blob/main/handlers/testingHandler.lua)
+
+[Testing Save Files](https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/tree/main/tests)

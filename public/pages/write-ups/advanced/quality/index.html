@@ -7,14 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Quality | CSC-324 Competencies Page</title>
 <meta name="title" content="Quality" />
-<meta name="description" content="Quality (Engineering)" />
+<meta name="description" content="Quality (Engineering)
+In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.
+
+Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality:
+
+
+Classes: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the
+Medium-Scale Abstraction
+section) are divided by the UIElement and Buyable classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each one functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button." />
 <meta name="keywords" content="" />
 
 
 <meta property="og:url" content="http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/">
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Quality">
-  <meta property="og:description" content="Quality (Engineering)">
+  <meta property="og:description" content="Quality (Engineering) In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.
+Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality:
+Classes: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the Medium-Scale Abstraction section) are divided by the UIElement and Buyable classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each one functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -24,14 +34,18 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Quality">
-  <meta name="twitter:description" content="Quality (Engineering)">
+  <meta name="twitter:description" content="Quality (Engineering) In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.
+Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality:
+Classes: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the Medium-Scale Abstraction section) are divided by the UIElement and Buyable classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each one functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button.">
 
 
 
 
   <meta itemprop="name" content="Quality">
-  <meta itemprop="description" content="Quality (Engineering)">
-  <meta itemprop="wordCount" content="2">
+  <meta itemprop="description" content="Quality (Engineering) In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.
+Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality:
+Classes: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the Medium-Scale Abstraction section) are divided by the UIElement and Buyable classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each one functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button.">
+  <meta itemprop="wordCount" content="1044">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -218,6 +232,48 @@
 
 <content>
   <h1 id="quality-engineering">Quality (Engineering)</h1>
+<p>In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.</p>
+<blockquote>
+<p>Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality:</p>
+</blockquote>
+<blockquote>
+<p><strong>Classes</strong>: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the
+<a href="/csc324-competencies/pages/write-ups/development/abstraction/">Medium-Scale Abstraction</a>
+section) are divided by the <code>UIElement</code> and <code>Buyable</code> classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each one functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button.</p>
+</blockquote>
+<blockquote>
+<p><strong>Architecture</strong>: Our codebase is well-structured. We have kept <code>main.lua</code> as simple as possible by factoring most operations into separate handler files. It loads all of our classes, handles user input events per Love2D specifications, and calls our per-frame update and draw functions. We then split the work into <code>dialogueHandler.lua</code> (checks whether story conditions are met and stores the textbox drawing code), <code>drawingHandler.lua</code> (checks visibility of elements and bundles all of our drawing operations), <code>gameStateHandler.lua</code> (manages the saving and loading of files), <code>perSecHandler.lua</code> (computes the currency changes based on game dt), <code>soundHandler.lua</code> (manages the game soundtrack and sound effects), and <code>testingHandler.lua</code> (contains our tests to run each frame and the drawing code for the testing interface).</p>
+</blockquote>
+<blockquote>
+<p><strong>Variable &amp; function naming</strong>: our program shines in the area of specific and descriptive variable names. The only single-letter names we have are for x and y coordinates, and for constants in the price calculation equations. We have global constants declared for things like the wood to paper conversion ratio, <code>WOOD_TO_PAPER</code>, and the amount of paper sacrificed that converts to one pps, <code>SACRIFICE_MODIFIER</code>. Observe our tables for keeping track of game currencies. These are values that we constantly call back to in our code, so it is very important that we have the naming be logical and accurate, which it is.</p>
+</blockquote>
+<pre tabindex="0"><code>    Currencies = {currentPaper = 0,
+                pps = 0,
+                currentWood = 0,
+                dps = 0}
+
+    PrestigeCurrencies = {globalMultiplier = 1,
+                        lifetimePaper = 0,
+                        lifetimeWood = 0,
+                        prestige = 0}
+</code></pre><blockquote>
+<p><strong>Good dev practices</strong>: We consistently used pull requests when making changes to the repository, allowing us to both gain practice in code review and ensure that the code we added seemed consistent with our established conventions and ideas about project execution. For example, we kept an eye out for naming conventions and efficiencies, hence why I suggested a name change for one of the variables in PR 112 of the
+<a href="/csc324-competencies/pages/write-ups/engineering/collaboration/">Collaboration</a>
+writeup. We never pushed any &ldquo;breaking&rdquo; changes to main, with the exception that when a new variable was added to the save file, people would have to update their personal saves to match or the code would throw a file parsing error.</p>
+</blockquote>
+<blockquote>
+<p><strong>General code cleanliness</strong>: finally, all of these things contribute to our codebase being mostly clean and presentable. To my knowledge, we do not have any unused code remnants or stray comments, and we were intentional about how to organize and integrate the different pieces of architecture.</p>
+</blockquote>
+<p>In what ways does it fall short? How would you addressed these issues if given more time?</p>
+<blockquote>
+<p><strong>Visibility and dialogue optimization</strong>: I am the least happy with the code for checking when buttons should be made available to the user and for handling dialogue events. Every UI element has a parameter for whether it should be displayed to the screen and able to be interacted with. This is on by default, but we only want the upgrade buttons to be available to the players once they reach certain milestones, so we set their visibility to false and then update it to true when the conditions are met. Right now, the <code>dependencies</code> function in <code>DrawingHandler</code> checks every condition for visibility every frame. A button will never go invisible after it has been shown, so we are doing a lot of repetitive visibility checks for things whose conditions have already been met. There are also a few if-else blocks that could be replaced with switch conditionals. With more time, I would have liked to clean up this code and have tracked which checks have already been met. The checks for displaying dialogue are similarly redundant and not very scalable if we decide to add more to the story. There is also unexpected behavior&ndash;after loading the save file, the last viewed dialogue will be redisplayed. I would have liked to investigated both of these issues further to make our codebase more robust. I also have not had much of a chance to look over the sound aspects of the game, including the slider and checkbox functions, which we used an external library for. Time permitting, I would have liked to have a better understanding of the code and integrate it slightly prettier than it currently is.</p>
+</blockquote>
+<blockquote>
+<p><strong>Code formatting</strong>: because we all have slightly different style preferences, and the code was being added to incrementally, there are some small discrepancies in naming and spacing conventions. We probably should have used a style checker, and also had more thorough discussions about style at the beginning of the semester (maybe have made a written guide?). Most notably, we have variable amounts of blank space separating code chunks, which doesn&rsquo;t impact the style too much but makes it slightly harder to parse at a glance.</p>
+</blockquote>
+<hr>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/woodrowa28/csc324-artefacts/blob/main/doc.pdf">Documentation PDF</a> &ndash; The Lua extension allows you to export documentation from your code. I was expecting for it to just export for things that had the LuaLS annotations, but turns out it exports any kind of variable or method in the program. This is less helpful, as the doc is super bulky, but you can still Ctr + F to find the information of the function you&rsquo;re looking for.</p>
 
 </content>
 

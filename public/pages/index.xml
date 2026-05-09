@@ -47,7 +47,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/</guid>
-      <description>&lt;h1 id=&#34;domain-specific-architecture-development&#34;&gt;Domain-Specific Architecture (Development)&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;domain-specific-architecture-development&#34;&gt;Domain-Specific Architecture (Development)&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;My focus for domain-specific architecture is the class hierarchy.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Collaboration</title>
@@ -75,7 +75,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/infrastructure/</guid>
-      <description>&lt;h1 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;What development tools did you use through process to help write code and automate the build/deployment process?&lt;/p&gt;&#xA;&lt;p&gt;What is one specific problem (e.g., debugging and issue) that you encountered while writing code and how did your tools help or hinder your ability to address that problem?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;What development tools did you use through process to help write code and automate the build/deployment process?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our software infrastructure was relatively simple compared to other medium-scale projects. We used the Love2D framework, did our programming in VSCode, and did not use LLM tools for code generation. I used the extensions &amp;ldquo;Lua&amp;rdquo; by sumneko, which provides intellisense features, type checking, and a method of documentation, &amp;ldquo;Love2D Support&amp;rdquo; by PixelByte Studios to run our program from a VSCode shortcut and link to the Love2D API, and GitHub Pull Requests to aid in the review of my teammates&amp;rsquo; code. We did not have many tools for the automation side of things, as verification is more difficult for a Love2D game project. We probably should have utilized GitHub Actions for a style checker, but we never got around to it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Medium-Scale Abstraction</title>
@@ -103,7 +103,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/process/</guid>
-      <description>&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;&#xA;&lt;p&gt;What software engineering practices did your group employ to manage, distribute, and execute on their work?&lt;/p&gt;&#xA;&lt;p&gt;In your estimation, how well did your group follow through on using these processes throughout the semester?&lt;/p&gt;&#xA;&lt;p&gt;What, if anything, got in the way of integrating these process into your workflow?&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;&#xA;&lt;p&gt;What software engineering practices did your group employ to manage, distribute, and execute on their work?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;At the beginning of the semester, we spent a fair amount of time talking about our interests and specialties, which allowed us to decide on well-defined roles for people to focus in on. These were not limiting by any means, but it gave us a good sense of how to logically divide out the work and separate our program into actionable chunks. We used Discord for regular communication, held a shared Google Drive, posted tasks to our GitHub project page, and did interactive code reviews via pull requests.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prototyping</title>
@@ -117,14 +117,14 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/quality/</guid>
-      <description>&lt;h1 id=&#34;quality-engineering&#34;&gt;Quality (Engineering)&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;quality-engineering&#34;&gt;Quality (Engineering)&lt;/h1&gt;&#xA;&lt;p&gt;In what ways does your codebase exemplify engineering excellence? Be exhaustive as possible in your analysis.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our codebase has definite issues, as is inevitable with any medium- to large-scale project, but in general, it is of good quality&amp;ndash;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Classes: All of the classes in our hierarchy have Java-doc style annotations, a feature provided by the Lua extension (see bottom of page). This exemplifies good coding practice, both in terms of having a set method of documenting work and being able to quickly understand parts of the classes. Our inheritance system is set up to reduce redundancies, practicing proper principles of abstraction. The two main purposes of our classes (detailed in the&#xA;&lt;a href=&#34;http://localhost:1313/csc324-competencies/pages/write-ups/development/abstraction/&#34;&gt;Medium-Scale Abstraction&lt;/a&gt;&#xA;section) are divided by the &lt;code&gt;UIElement&lt;/code&gt; and &lt;code&gt;Buyable&lt;/code&gt; classes, effectively grouping together objects with similar purposes. While the number of button classes may look redundant, this is one of the better ways to go about it because each functions so differently. All of the weapon buttons, for example, are instances of the same class because their function is the same, but the buying operation and interaction conditions are much different for something like the prestige button.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Self-Learning</title>
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/engineering/learning/</guid>
-      <description>&lt;h1 id=&#34;self-learning&#34;&gt;Self-Learning&lt;/h1&gt;&#xA;&lt;p&gt;Describe the technology that the tutorial addresses and how it fits into your project.&lt;/p&gt;&#xA;&lt;p&gt;Evaluate how useful the tool was in your work. What were its strengths and weaknesses, especially in comparison with other tools you have used.&lt;/p&gt;&#xA;&lt;p&gt;Identify one particular sticking point to using this technology that you would want your team to know about when adopting the tool and how you resolved it.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;self-learning&#34;&gt;Self-Learning&lt;/h1&gt;&#xA;&lt;p&gt;Describe the technology that the tutorial addresses and how it fits into your project.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our main technology was Love2D, a Lua framework meant for programming 2D games. Since this is a pretty simple framework, we also talked about our core extensions, &amp;ldquo;Lua&amp;rdquo; by sumneko and &amp;ldquo;Love2D Support&amp;rdquo; by PixelByte Studios. Our project was a single-language endeavor, made only using Lua. Love2D is a very simple framework, giving methods to construct a core loop and draw to the screen, but not much more. This allowed us the most freedom in development and graphic design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing Infrastructure</title>
@@ -145,7 +145,7 @@
       <link>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/testing_tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/csc324-competencies/pages/write-ups/advanced/testing_tech/</guid>
-      <description>&lt;h1 id=&#34;testing-technologies-verification&#34;&gt;Testing Technologies (Verification)&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;testing-technologies-verification&#34;&gt;Testing Technologies (Verification)&lt;/h1&gt;&#xA;&lt;p&gt;What advanced testing tool or technology did you employ in your code?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Due to the lack of testing infrastructure with Love2D compatibility, we created a custom testing interface to verify how the &amp;ldquo;idle&amp;rdquo; aspects of our program ran (the background calculations logic).&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What did this tool/technology validate in your program?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The testing framework pretty much only works to test the automatic, currency per second parts of our program. It checks that pps and dps are accurate to the held weapons/sacrificed paper (values that only update when the user purchases upgrades), and that total wood and paper are linked properly and changing as we expect. The main purpose of this was to check what happens when paper per second is outpacing damage per second. If wood is abundant, paper should be increasing by the pps value, while wood is increasing by the dps value and decreasing by pps times the 5 wood needed to make one paper. The math for checking this is pretty similar to the actual calculation math, so while it is still helpful for general verification, we were not expecting this part to find many issues. If pps is outpacing the amount of wood, however, we need to make sure that paper is increasing only by the amount that the wood permits, and that wood is not being taken into the negative or having other errors.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

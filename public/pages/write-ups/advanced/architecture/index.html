@@ -7,14 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Architecture | CSC-324 Competencies Page</title>
 <meta name="title" content="Architecture" />
-<meta name="description" content="Domain-Specific Architecture (Development)" />
+<meta name="description" content="Domain-Specific Architecture (Development)
+
+My focus for domain-specific architecture is the class hierarchy.
+
+What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?
+
+Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project." />
 <meta name="keywords" content="" />
 
 
 <meta property="og:url" content="http://localhost:1313/csc324-competencies/pages/write-ups/advanced/architecture/">
   <meta property="og:site_name" content="CSC-324 Competencies Page">
   <meta property="og:title" content="Architecture">
-  <meta property="og:description" content="Domain-Specific Architecture (Development)">
+  <meta property="og:description" content="Domain-Specific Architecture (Development) My focus for domain-specific architecture is the class hierarchy.
+What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?
+Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -24,14 +32,18 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Architecture">
-  <meta name="twitter:description" content="Domain-Specific Architecture (Development)">
+  <meta name="twitter:description" content="Domain-Specific Architecture (Development) My focus for domain-specific architecture is the class hierarchy.
+What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?
+Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project.">
 
 
 
 
   <meta itemprop="name" content="Architecture">
-  <meta itemprop="description" content="Domain-Specific Architecture (Development)">
-  <meta itemprop="wordCount" content="3">
+  <meta itemprop="description" content="Domain-Specific Architecture (Development) My focus for domain-specific architecture is the class hierarchy.
+What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?
+Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project.">
+  <meta itemprop="wordCount" content="613">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -218,6 +230,32 @@
 
 <content>
   <h1 id="domain-specific-architecture-development">Domain-Specific Architecture (Development)</h1>
+<blockquote>
+<p>My focus for domain-specific architecture is the class hierarchy.</p>
+</blockquote>
+<p>What aspects of your software architecture arise because of the domain your program operates in or the technology it employs?</p>
+<blockquote>
+<p>Games like this often have many small objects linked to game stats and specific pieces of computation. Since Love2D is a fairly bare-bones framework, it does not have any built-in way of managing the different types of objects we wanted to use for our project. Thus, we decided to investigate an inheritance-based class system for our project.</p>
+</blockquote>
+<blockquote>
+<p>I spent a lot of time learning about tables, functionally Lua&rsquo;s only data structure, in order to work with the classes. Tables are very general structures and can hold variables, methods, and even other tables. However, the real power from metatables, which are hidden tables that define the behavior of existing tables. By manipulating the metatables of &ldquo;objects,&rdquo; you can configure inheritance and a class hierarchy in a language that does not natively have one.</p>
+</blockquote>
+<p>What domain-specific/technology-specific problem do your architectural choices solve?</p>
+<blockquote>
+<p>Since we are constructing all of the user interface ourselves, there is a lot of repetition of elements and shared properties between the parts. For example, everything on the screen needs to have coordinates and dimensions, and most things need to have defined rules and physical borders through which to be interacted with. Putting in the work to learn Lua tables and construct an Object class set up the foundation for nearly every aspect of our UI and for the different methods of production optimization. Now, we can give general guides to how a weapon purchasing button should behave and fill out our entire weapon progression with minimal changes between the buttons. We also utilized the structure to make classes for objects that we would only have 1 of, like the prestige button. Even though we didn&rsquo;t get the benefits of duplication, the inheritance aspect was still incredibly useful in letting us use the code for checking mouse position, hovering/clicking, and drawing with the slight tweaks we needed.</p>
+</blockquote>
+<p>How does your solution solve these issues?</p>
+<blockquote>
+<p>From a usage standpoint, our class hierarchy works pretty similarly to an OO language like Java. You create new objects by calling the name of the class, can reference methods and fields attached to fields, and each instantiation exists independently of others. We cut down on a significant amount of repetition and/or inconsistent tables that would have otherwise been there. However, the behind-the-scenes construction is not as nice. Because the classes are just tables used in specific ways, you have to impose the constraints on yourself (ex. &ldquo;constructors&rdquo; are not a thing, you must be consistent about how you go about initializing tables). The metatable manipulation allows us to define behavior when &ldquo;calling&rdquo; the name of the class, which creates a new table with the same metatable information and a reference to the superclass of the object. It then returns this shell to be filled in with the specific implementations of the desired class. The documentation function from the Lua extension is also very helpful in keeping all parts connected as they should be. In all, this convoluted process gives the necessary setup for easy UI abstraction/shared behavior, as well as nicely packaging the fragments of data that are core to our game.</p>
+</blockquote>
+<hr>
+<h2 id="resources">Resources</h2>
+<p><a href="https://www.lua.org/pil/contents.html">Programming in Lua</a></p>
+<p><a href="https://github.com/rxi/classic">Classic by rxi</a></p>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/blob/main/classes/object.lua">Object Class</a></p>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/IdleDesign/blob/main/Classes%20Diagram.pdf">Class Diagram</a> &ndash; this is <em>very</em> outdated, so the structure is incredibly simplified, but most of the existing fields/methods are still present to some degree. It mainly shows the work I put into thinking about the hierarchy based on the properties of the classes and what repeated functionality we would need.</p>
+<p><a href="https://github.com/woodrowa28/csc324-artefacts/blob/main/Lua%20Tables%20Aubrey%20Woodrow.pdf">Table-Learning Notes</a></p>
 
 </content>
 

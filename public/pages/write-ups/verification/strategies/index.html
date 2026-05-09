@@ -37,7 +37,7 @@ Love2d/Lua does not support code checker functionality due to the lack of formal
   <meta itemprop="name" content="Testing Strategies">
   <meta itemprop="description" content="Testing Strategies According to code coverage tools, what aspects of this component are covered with tests?
 Love2d/Lua does not support code checker functionality due to the lack of formal testing. I estimate that about 40% of our codebase is covered by these tests. Our formal tests are only able to cover the per-tick update functionality, accessing various objects, and exercises the testing screen drawing code. Princess has also worked on a step-by-step guide for testing the UI to the best of our ability; it details correct behavior for the drawing states of our program, allowing us to cover that section of code too.">
-  <meta itemprop="wordCount" content="424">
+  <meta itemprop="wordCount" content="431">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -255,6 +255,10 @@ end
 <blockquote>
 <p>The project&rsquo;s nature meant that it was not possible to create a comprehensive testing suite, as game execution relies on abstracted-away functions and loops from Love2D. Our game does not come with fancy physics calculations or complicated data storage, so there isn&rsquo;t much to poke at behind the scenes. Instead, we did what we could for ensuring the main part of execution, the repeated game loop, was as sturdy as possible.</p>
 </blockquote>
+<hr>
+<h2 id="evidence">Evidence</h2>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/blob/main/handlers/testingHandler.lua">Testing Handler Class</a></p>
+<p><a href="https://github.com/Idle-Devs-Progress-is-Optional/PaperGame/tree/main/tests">Testing Save Files</a></p>
 
 </content>
 
